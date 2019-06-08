@@ -1,4 +1,4 @@
-$mainBlue: #2f5573;
+$mainBlue: turquoise;
 
 p { 
     color: $mainBlue;
@@ -8,6 +8,6 @@ p {
 
 .box {
     a {
-        color: pink;
+        color: $mainBlue;
     }
 }

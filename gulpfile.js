@@ -12,7 +12,6 @@ gulp.task('default', function() {
 
 gulp.task('html', function() {
     console.log('something chnaged in the HTML file(s)');
-
 });
 
 gulp.task('styles', function() {
@@ -29,13 +28,13 @@ gulp.task('watch', function() {
    watch(['./app/index.html'], function() {
         gulp.task('html').call();
     }).on('change', function(path, stats) {
-        console.log("File(s) at " + path + " changing..");
+        console.log(path.replace(/^.*(\\|\/|\:)/, '') + " changing..");
     });
 
     watcher = watch(['./app/assets/styles/**/*.css'], function() {
         gulp.task('styles').call();
     }).on('change', function(path, stats) {
-        console.log("File(s) at " + path + " changing..");
+        console.log(path.replace(/^.*(\\|\/|\:)/, '') + " changing..");
     });
 })
 
