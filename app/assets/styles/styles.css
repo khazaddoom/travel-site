@@ -1,9 +1,9 @@
-$mainBlue: #2f5572;
+$mainBlue: #2f5573;
 
 p { 
     color: $mainBlue;
     margin: 10px;
-    columns: 200px 2;
+    columns: 200px 4;
 }
 
 .box {

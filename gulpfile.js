@@ -26,18 +26,16 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function() {
 
-    var watcher;
-
    watch(['./app/index.html'], function() {
         gulp.task('html').call();
+    }).on('change', function(path, stats) {
+        console.log("File(s) at " + path + " changing..");
     });
 
     watcher = watch(['./app/assets/styles/**/*.css'], function() {
         gulp.task('styles').call();
-    });
-
-    watcher.on('change', function(path, stats) {
+    }).on('change', function(path, stats) {
         console.log("File(s) at " + path + " changing..");
-      });
+    });
 })
 

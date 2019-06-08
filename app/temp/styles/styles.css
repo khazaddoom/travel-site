@@ -1,9 +1,9 @@
 p { 
-    color: #2f5572;
+    color: #2f5573;
     margin: 10px;
-    -webkit-columns: 200px 2;
-       -moz-columns: 200px 2;
-            columns: 200px 2;
+    -webkit-columns: 200px 4;
+       -moz-columns: 200px 4;
+            columns: 200px 4;
 }
 
 .box a {
