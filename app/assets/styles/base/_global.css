@@ -10,4 +10,8 @@ img {
     height: auto;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /***this is from  _global css file ***/
