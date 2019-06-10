@@ -1,13 +1,12 @@
-$mainBlue: turquoise;
+@import "modules/_large-hero";
 
-p { 
-    color: $mainBlue;
-    margin: 10px;
-    columns: 200px 4;
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
 }
 
-.box {
-    a {
-        color: $mainBlue;
-    }
+img {
+    max-width: 100%;
+    height: auto;
 }
+
