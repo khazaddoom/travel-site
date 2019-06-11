@@ -14,4 +14,8 @@ img {
     box-sizing: border-box;
 }
 
+
+a {
+    color: $mainOrange;
+}
 /***this is from  _global css file ***/

@@ -3,6 +3,10 @@
     @mixin clearfix;
 
     @mixin atMedium {
+
+        &__b-margin-until-medium {
+            margin-bottom: 0;
+        }
         
         &__medium-4 {        
             width: 33.33%;
@@ -29,6 +33,10 @@
     &--gutters > div {
         padding-right: 65px;
        
+    }
+
+    &__b-margin-until-medium {
+        margin-bottom: 1rem;
     }
 
 }
