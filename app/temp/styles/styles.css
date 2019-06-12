@@ -366,7 +366,7 @@ a {
     }
 .wrapper {
 
-    overflow: hidden;/* for the margin-right gutter */ 
+    overflow: hidden; /* for the margin-right gutter */ 
     
     padding-left: 18px;
     padding-right: 18px;
@@ -391,6 +391,7 @@ a {
         padding-right: 0;
     }
 .page-section {
+    
     padding: 1.2rem 0;
 }
 .page-section--blue {
@@ -674,5 +675,38 @@ Instead edit gulp/templates/sprite */
     height: 42px;    
     background-position: 36.69752421959096% 45.792307692307695%;
 }
+.testimonial {
+
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 1.8125rem 1px 1.8125rem;
+    
+}
+.testimonial__photo {
+        overflow: hidden;
+        border-radius: 80px;
+        border: 6px solid rgba(255, 255, 255, 0.8);;
+        width: 160px;
+        height: 160px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -80px;
+        position: relative;
+        top: -80px;
+        
+    }
+.testimonial__title {
+        color: #2f5572;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0;
+    }
+.testimonial__subtitle {
+        color: #d59541;
+        text-align: center;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        margin: 0.25rem 0 1rem 0;
+    }
 
 
