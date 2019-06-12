@@ -4,6 +4,10 @@
     font-weight: 300;
     text-align: center;
 
+    &--blue {
+        color: $mainBlue;
+    }
+
     @mixin atSmall {
         font-size: 3.75rem;
     }
@@ -23,9 +27,19 @@
             margin-right: .5rem;
             margin-left: 0;
             display: inline;
-            margin-bottom: 0;
-        }       
-    }   
+        }
+        
+        &--align {
+            
+            @mixin atSmall {
+                position: relative;
+                top: 8px;
+            }
+
+        }
+    }
+    
+    
 
      
 
