@@ -300,13 +300,18 @@ a {
         display: block;
     }
 .large-hero__text-content {
-
+        padding-top: 88px;
         position: absolute;
         left: 0;
         top: 50%;
         width: 100%;
         text-align: center;
         transform: translateY(-50%);
+    }
+@media (min-width: 800px) {
+.large-hero__text-content {
+            padding-top: 60px
+    }
     }
 .large-hero__title {
         font-weight: 300;
@@ -848,6 +853,79 @@ Instead edit gulp/templates/sprite */
             margin-bottom: 0;
             margin-right: 1.4rem
     }
+    }
+.site-header {
+
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding: 10px 0;
+    
+}
+.site-headermixin atMedium {
+        background-color: rgba(47,85,114, 0.3);
+    }
+.site-header__btn-container {
+        float: right;
+    }
+.site-header__logo {
+        position: absolute;
+        background-color: #2f5572;
+        padding: 1.5625rem 2.25rem;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) scale(0.8);
+        transform-origin: 50% 0;
+    }
+@media (min-width: 800px) {
+.site-header__logo {
+            left: auto;
+            transform: translateX(0)
+    }
+    }
+.site-header__logo_graphic {
+        text-indent: -9999px;
+    }
+.site-header__menu-icon {
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+@media (min-width: 800px) {
+.site-header__menu-icon {
+            display: none
+    }
+    }
+.site-header__menu-content {
+        display: none;
+    }
+@media (min-width: 800px) {
+.site-header__menu-content {
+            display: block
+    }
+    }
+.primary-nav--pull-right {
+        float: right;
+    }
+.primary-nav ul {
+        margin: 0;
+        padding: 0;
+        
+    }
+.primary-nav li {
+        list-style-type: none;
+        float: left;
+        padding-right: 20px;
+    }
+.primary-nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+        padding: 12px 0;
+        display: block;
     }
 
 

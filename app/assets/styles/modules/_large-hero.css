@@ -4,19 +4,23 @@
 
     position: relative;
     border-bottom: 10px solid $mainBlue;
-
+    
     &__image {
         display: block;
     }
 
     &__text-content {
-
+        padding-top: 88px;
         position: absolute;
         left: 0;
         top: 50%;
         width: 100%;
         text-align: center;
         transform: translateY(-50%);
+
+        @mixin atMedium {
+            padding-top: 60px;
+        }
     }
     
     &__title {
