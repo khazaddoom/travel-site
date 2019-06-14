@@ -49,4 +49,4 @@ gulp.task('dummyRefresh', function() {
     browserSync.reload();
 })
 
-gulp.task('scriptsRefresh', gulp.series('scripts', 'dummyRefresh'));
+gulp.task('scriptsRefresh', gulp.series('modernizr', 'scripts', 'dummyRefresh'));
